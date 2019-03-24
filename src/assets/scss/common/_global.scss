@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box !important;
+}
+body {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    line-height: 1.15;
+}
+.browserupgrade {
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    position: fixed;
+    top: 0px;
+
+    a {
+        color: #fcd707;
+    }
+}
+h1 {
+    font-family: $heading-font;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 80px;
+    color: $heading-color;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0px 0px 30px;
+
+    + h2, h3, h4, h5, h6 {
+        margin-top: 30px;
+    }
+    @media screen and (max-width: $small) {
+        font-size: 70px;
+        line-height: 60px;
+    }
+}
+h2 {
+    font-family: $heading-font;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 58px;
+    color: $heading-color;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0px 0px 30px;
+
+    @media screen and (max-width: $small) {
+        font-size: 50px;
+        line-height: 48px;
+    }
+}
+h3 {
+    font-family: $text-font;
+    font-weight: 300;
+    font-size: 38px;
+    color: $heading-color;
+    text-transform: uppercase;
+    margin: 50px 0px 30px;
+
+    @media screen and (max-width: $small) {
+        font-size: 32px;
+    }
+}
+h4 {
+    font-family: $text-font;
+    font-weight: 600;
+    font-size: 30px;
+    color: $heading-color;
+    margin: 0px 0px 30px;
+
+    @media screen and (max-width: $small) {
+        font-size: 26px;
+    }
+}
+h5 {
+    font-family: $text-font;
+    font-weight: 300;
+    font-size: 24px;
+    color: $heading-color;
+    margin: 0px 0px 20px;
+
+    @media screen and (max-width: $small) {
+        font-size: 22px;
+    }
+}
+h6 {
+    font-family: $text-font;
+    font-weight: 600;
+    font-size: 20px;
+    color: $heading-color;
+    margin: 0px 0px 20px;
+}
+p {
+    font-family: $text-font;
+    font-size: 20px;
+    line-height: 30px;
+    color: $text-color;
+    margin: 0px 0px 20px;
+}
+ul {
+    margin: 0px 0px 20px;
+
+    li {
+        list-style-type: none;
+        font-family: $karla;
+        font-size: 20px;
+        line-height: 30px;
+        color: $text-color;
+
+        &:before {
+            box-sizing: content-box;
+            display: inline-block;
+            content: '';
+            background-color: $white;
+            width: 6px;
+            height: 6px;
+            border: 4px solid $green;
+            border-radius: 10px;
+            position: relative;
+            margin-right: 10px
+        }
+    }
+}
+ol {
+    margin: 0px 0px 20px;
+    counter-reset: item;
+
+    li {
+        list-style-type: none;
+        font-family: $karla;
+        font-size: 20px;
+        line-height: 30px;
+        color: $text-color;
+        position: relative;
+        padding-left: 30px;
+
+        &:before {
+            display: inline-block;
+            content: counters(item,".") " ";
+            counter-increment: item;
+            font-weight: 600;
+            color: $magenta;
+            position: absolute;
+            left: 0px;
+        }
+    }
+}
+blockquote {
+    width: 85%;
+    background-color: $purple;
+    font-family: $text-font;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: $white;
+    text-shadow: 3px 3px 0px darken($purple, 20%);
+    line-height: 65px;
+    position: relative;
+    margin: 0px auto;
+    padding: 50px 70px;
+    border-radius: 7px;
+
+    @media screen and (max-width: $large) {
+        font-size: 40px;
+        line-height: 50px;
+        padding: 50px;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 30px;
+        text-shadow: 2px 2px 0px darken($purple, 20%);
+        line-height: 40px;
+        padding: 30px;
+    }
+    @media screen and (max-width: $small) {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+        padding: 20px;
+    }
+}
+.section-container {
+    width: 90%;
+    max-width: $x-large;
+    margin: 0px auto;
+}
+hr {
+    background-color: $gray-accent;
+    height: 1px;
+    border: none;
+    width: 90%;
+    max-width: $x-large;
+    margin: 0px auto;
+    box-sizing: border-box;
+}

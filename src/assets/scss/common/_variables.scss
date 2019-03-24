@@ -1,0 +1,70 @@
+// ----------------------  SITE COLORS  ----------------------
+
+$blue:          #03a9f4;
+$red:           #f44336;
+$green:         #8bc34a;
+$purple:        #673ab7;
+$magenta:       #e91e63;
+$gold:          #ffc107;
+$black:         #252525;
+$gray:          #888888;
+$white:         #ffffff;
+$error:         $red;
+$success:       $green;
+
+
+// ----------------------  TYPEFACES  ----------------------
+
+// Karla
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+// Knockout HTF-48
+@font-face {
+    font-family: 'Knockout HTF-48';
+    src: url('../fonts/style-guide/Knockout-HTF48-Featherweight.eot');
+    src: url('../fonts/style-guide/Knockout-HTF48-Featherweight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/style-guide/Knockout-HTF48-Featherweight.woff2') format('woff2'),
+         url('../fonts/style-guide/Knockout-HTF48-Featherweight.woff') format('woff'),
+         url('../fonts/style-guide/Knockout-HTF48-Featherweight.ttf') format('truetype'),
+         url('../fonts/style-guide/Knockout-HTF48-Featherweight.svg#Knockout-HTF48-Featherweight') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$karla:         'Karla', sans-serif;
+$knockout-48:   'Knockout HTF-48', sans-serif;
+
+
+// ----------------------  BREAKPOINTS  ----------------------
+
+$x-large:   1500px;
+$large:     1200px;
+$medium:    900px;
+$small:     550px;
+
+
+// ----------------------  STYLE GUIDE VARIABLES  ----------------------
+
+// Set these for each project
+
+$primary-color:         $blue;
+$secondary-color:       $red;
+$tertiary-color:        $green;
+$gray-accent:           $gray;
+$heading-color:         $black;
+$heading-font:          $knockout-48;
+$text-color:            $gray;
+$text-font:             $karla;
+
+$color1:                $blue;
+$color2:                $red;
+$color3:                $green;
+$color4:                $purple;
+$color5:                $magenta;
+$color6:                $gold;
+$color7:                $black;
+$color8:                $gray;
+$color9:                $white;
+
+$typeface1:             $karla;
+$typeface2:             $knockout-48;
