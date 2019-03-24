@@ -1,1 +1,1 @@
-# Starter-Style-Guide
+# Starter Style Guide
